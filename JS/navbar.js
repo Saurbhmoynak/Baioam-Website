@@ -70,9 +70,3 @@ navbarCoursesDropdownMenu.onclick = () => {
 
 }
 
-// Onclick change navbar-icon
-$(document).ready(function () {
-  $(".navbar-toggler").click(function () {
-    $("#navbar-toggler-icon").toggleClass("cross-icon");
-  });
-});
