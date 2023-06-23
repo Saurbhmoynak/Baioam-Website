@@ -97,6 +97,10 @@ header img {
     width: 120px;
 }
 
+.fa-xmark{
+  font-size: 2rem;
+}
+
 header .nav-item a:hover {
     color: #ec4f01 !important;
 }
