@@ -166,6 +166,7 @@
 
 .three{
     margin-bottom: 0;
+    padding-left: 100px !important;
 }
 
 .why-web-dev-box, .placement-info{
@@ -177,6 +178,7 @@
 
 .five{
     margin-bottom:2.5em;
+    padding-left: 100px !important;
 }
 
 #why-web-dev-heading-2,
