@@ -361,10 +361,11 @@ form input{
 
 .rf_col2{
     width:45%;
+    margin: auto;
 }
 .rf_col2 img{
-    width: 90%;
-    position: relative;
+
+    width: 100%;
     bottom: 17%;
 }
 /* ---------------how---------- */
@@ -819,6 +820,7 @@ form input{
     .rf_col2 img {
          margin-top: 30px;
          margin-bottom: 0;
+         width:80%;
     }
     .rf_col h4{
         font-size:22px;
