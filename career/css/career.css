@@ -1260,6 +1260,22 @@ margin-bottom: -10px;
 }
 }
 
+/* changes start */
+@media (min-width:768px) and (max-width:1210px){
+  footer .row{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+
+  }
+  footer .row .col-md-3{
+    max-width: 50vw;
+    padding-left: 5rem;
+  }
+  .footer-container{
+    padding-bottom:2rem;
+  }
+}
+
 
 /* Mobile View  */
 
