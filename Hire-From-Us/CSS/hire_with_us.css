@@ -744,6 +744,15 @@ header .nav-item a:hover {
   }
 }
 
+
+@media (max-width:1129px) {
+  header .nav-item a,
+  header button{
+        font-size: 0.78rem;
+        margin: auto 0px;
+    }
+}
+
 @media (max-width:1000px){
   .hiring-sec-box{
     width:70%;

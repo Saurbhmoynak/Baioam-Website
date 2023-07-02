@@ -165,6 +165,13 @@ header .nav-item a:hover {
   }
 }
 
+@media (max-width:1137px) {
+  header .nav-item a,
+  header button{
+        font-size: 0.78rem;
+    }
+}
+
 /* changes start */
 
 @media (min-width:768px) and (max-width:1210px){

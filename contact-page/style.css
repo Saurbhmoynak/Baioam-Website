@@ -610,6 +610,14 @@ footer .contact-us p div i {
 }
 
 /* changes start */
+@media (max-width:1137px) {
+    header .nav-item a,
+    header button{
+          font-size: 0.78rem;
+          margin: auto 0px;
+      }
+  }
+  
 
 @media (min-width:768px) and (max-width:1210px){
     footer .row{
