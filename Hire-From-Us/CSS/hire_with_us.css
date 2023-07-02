@@ -90,6 +90,10 @@ header .nav-item a:hover {
   color: #ec4f01 !important;
 }
 
+.fa-xmark{
+  font-size: 2rem;
+}
+
 .btn-1 {
   font-size: 1rem;
   font-weight: 600;
@@ -115,16 +119,24 @@ header .nav-item a:hover {
 .strong_mindset-sec {
   margin: 10% 7%;
   display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.mr-bottom-0{
+  margin-bottom: 0;
 }
 
 .strong_mindset-content {
-  width: 70%;
+  width: 100%;
 }
 
 .strong_mindset-content h1 {
   font-size: 45px;
   font-weight: bold;
   color: rgb(1, 1, 68);
+  width:100%;
 }
 
 .outer{
@@ -139,8 +151,16 @@ header .nav-item a:hover {
   font-size: 46px;
 }
 
+.proof_of_work_main {
+  display: flex;
+  flex-direction: row;
+  column-gap: 3em;
+  width: 100%;
+}
 
-
+.proof_of_work{
+  margin:auto 0;
+}
 
 
 .strong_mindset-content p {
@@ -149,6 +169,11 @@ header .nav-item a:hover {
   margin: 20px 0;
   line-height: 1.8;
   text-align: justify;
+  width:100%;
+}
+
+.strong_mindset-content .hiring-sec-paragraph{
+  width:60%;
 }
 
 /*
@@ -182,13 +207,22 @@ header .nav-item a:hover {
   font-weight: 600;
 }
 
-
-
-.strong_mindset-img img {
-  width: 97%;
-  float: right;
+.strong_mindset-img{
+  display: grid;
+  position: relative;
+  margin:auto 0;
 }
 
+.hiring-contact-image{
+  padding-top:4em;
+  width:80em;
+  margin:0 auto;
+}
+
+.strong_mindset-img img{
+  width:100%;
+  border-radius: 10px;
+}
 
 .proof_of_work img {
   float: left;
@@ -199,7 +233,6 @@ header .nav-item a:hover {
 
 .hiring-main {
   flex-direction: column;
-  ;
 }
 
 .hiring-sec {
@@ -302,16 +335,15 @@ header .nav-item a:hover {
   display: flex;
   justify-content: left;
   align-items: center;
-  /* position: relative;
-  top: 72%;
-  left: 47%; */
-
+  position:absolute;
   text-align: center;
+  bottom:18em;
+  left:10rem;
 
 }
 
 .heading i {
-  font-size: 28px;
+  font-size: 3.8rem;
   color: rgb(255, 0, 0);
   background-color: white;
   padding: 8px 10px;
@@ -322,7 +354,7 @@ header .nav-item a:hover {
 
 .heading h1 {
   color: white;
-  font-size: 28px;
+  font-size: 3.8rem;
   margin: 20px 0;
   font-weight: bold;
   text-align: center;
@@ -530,22 +562,9 @@ header .nav-item a:hover {
 }
 @media only screen and (min-width: 1580px) {
 
-  /* .heading {
-    top: 140%;
-  } */
-
   .container-main .contact-heading-faq{
   display: none;
   }
-
-}
-
-@media only screen and (max-width: 1527px) {
-
-  /* .heading {
-    top: 100%;
-    left: 47%;
-  } */
 
 }
 
@@ -573,6 +592,10 @@ header .nav-item a:hover {
     align-items: center;
   }
 
+  .mr-bottom-0{
+    margin-bottom:7%;
+  }
+  
   .strong_mindset-sec + .strong_mindset-sec{
     margin-top: 0 !important;
   }
@@ -601,6 +624,10 @@ header .nav-item a:hover {
     font-size: clamp(0.8rem,calc(-0.7rem + 2.2vw),1.2rem);
   }
 
+  .strong_mindset-content .hiring-sec-paragraph{
+    width:100%;
+  }
+  
   .proof_of_work_main {
     display: flex;
     flex-direction: row;
@@ -672,7 +699,10 @@ header .nav-item a:hover {
     position: relative;
     margin:0;
     padding:0;
-    padding-top: 4em;
+  }
+
+  .hiring-contact-image{
+    padding-top: 4em;;
     width:30em;
   }
 
@@ -680,6 +710,7 @@ header .nav-item a:hover {
     width:100%;
     background-color: #050237;
     border-radius: 10px;
+    margin:auto;
   }
 
   .heading .fa{
@@ -688,7 +719,8 @@ header .nav-item a:hover {
 
   .heading {
     position: absolute;
-    bottom:4.8em;
+    left:0;
+    bottom:5em;
     /* justify-content: center; */
     z-index:999;
   }
@@ -697,6 +729,10 @@ header .nav-item a:hover {
     font-size: 1.6rem !important;
     color:white;
     width:100%;
+  }
+
+  .heading i{
+    font-size: 1.6rem !important;
   }
 
   .contact-more-info h1{
@@ -803,6 +839,10 @@ header .nav-item a:hover {
   }
 
   .strong_mindset-img .heading h1{
+    font-size: 1rem !important;
+  }
+
+  .strong_mindset-img .heading i{
     font-size: 1rem !important;
   }
    
@@ -972,11 +1012,16 @@ header .nav-item a:hover {
   }
 
   .strong_mindset-img{
-    width: 100%;
+    width: 18em;
   }
 
-  .heading{
-    bottom:3.3rem !important;
+  .strong_mindset-img .heading{
+    bottom:2.5rem !important;
+  }
+
+  .strong_mindset-img .heading i {
+    font-size: 0.8rem !important;
+    margin-left: 0.7em;
   }
 
   .hiring_h1 h1 span {
@@ -1024,11 +1069,6 @@ header .nav-item a:hover {
   .img img {
     width: 100%;
   }
-}
-
-@media only screen and (max-width: 300px) {
-
-
 }
 
 
